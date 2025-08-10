@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Filmes e Séries</title>
+    </head>
+    <body>
+        <h1 class="tituloPagina centralizarTexto">Filmes e Séries</h1>
+        <h4 class="subTitulo centralizarTexto">
+            Procure filmes e séries de acordo com seu gosto. <br />
+            Vote e deixe seu filme ou série preferido com um joinha.
+        </h4>
+
+        <!-- 1. Seção de busca -->
+        <section class="busca">
+            <form id="buscaForm">
+                <input
+                    id="searchInput"
+                    name="query"
+                    type="text"
+                    placeholder="Buscar por um Filme ou Série"
+                />
+                <input type="submit" value="Buscar" />
+            </form>
+        </section>
+
+        <!-- 2. Lista de cards -->
+        <section id="lista">
+            <div id="content"></div>
+        </section>
+
+        <!-- 3. Totais de votos -->
+        <div id="totais">
+            <p id="totalGostei">Votos Positivos: 0</p>
+            <p id="totalNaoGostei">Votos Negativos: 0</p>
+        </div>
+
+        <!-- 4. Cadastro manual (sem script por enquanto) -->
+        <h1 class="tituloCadastro">Cadastro de filmes e séries</h1>
+        <div class="form">
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Nome do filme ou série"
+                required
+            />
+            <input type="text" id="genero" placeholder="Gênero" required />
+            <input
+                type="url"
+                id="imagem"
+                placeholder="Url da imagem"
+                required
+            />
+            <textarea
+                id="descricao"
+                placeholder="Descrição (Opcional)"
+            ></textarea>
+            <button id="cadastrarBtn">Cadastrar</button>
+        </div>
+
+        <footer class="centralizarTexto">Desenvolvido por Gabriel Costa</footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
